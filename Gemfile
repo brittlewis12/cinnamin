@@ -32,8 +32,25 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'faye'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'jasmine', github: 'pivotal/jasmine-gem'
+  gem 'jasmine-core', github: 'pivotal/jasmine'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'selenium-webdriver'
+  gem 'launchy'
+end
+
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
+
+# Use thin as the server
+gem 'thin'
 
 # Use unicorn as the app server
 # gem 'unicorn'
