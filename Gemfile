@@ -34,6 +34,8 @@ end
 
 gem 'faye'
 
+gem 'redis'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
