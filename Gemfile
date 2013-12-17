@@ -36,6 +36,8 @@ gem 'faye'
 
 gem 'redis'
 
+gem 'backaid'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
