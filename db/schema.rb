@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20131217165411) do
   add_index "groups", ["creator_id"], name: "index_groups_on_creator_id", using: :btree
 
   create_table "groups_members", force: true do |t|
-    t.integer "member_id"
-    t.integer "group_id"
+    t.integer "member_id", null: false
+    t.integer "group_id",  null: false
   end
 
   create_table "messages", force: true do |t|

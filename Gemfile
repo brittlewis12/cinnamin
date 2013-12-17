@@ -39,6 +39,7 @@ gem 'redis'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'capybara'
   gem 'jasmine', github: 'pivotal/jasmine-gem'
   gem 'jasmine-core', github: 'pivotal/jasmine'

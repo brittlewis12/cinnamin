@@ -1,8 +1,8 @@
 class CreateGroupsMembers < ActiveRecord::Migration
   def change
     create_table :groups_members do |t|
-      t.references :member
-      t.references :group
+      t.references :member,   null: false
+      t.references :group,    null: false
     end
 
     reversible do |dir|
