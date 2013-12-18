@@ -6,9 +6,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="container">
+  <nav>
+    <li><a href="#" class="nav home">Cinnamin</a></li>
+    <li><a href="#" class="nav sign-up">Sign up</a></li>
+    <li><a href="#" class="nav log-in">Log in</a></li>
+    <li><a href="#" class="nav account">Account</a></li>
+    <li><a href="#" class="nav log-out">Log out</a></li>
+  </nav>
+  <div class="app">
+    <%= yield %>
+  </div>
+</div>
 <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
 
 </body>

@@ -2,7 +2,7 @@ Cinnamin = {
   Models: {},
   Collections: {},
   Views: {},
-  Routers: {}
+  Routers: {},
   init: function() {
 
   }
