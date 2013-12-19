@@ -1,3 +1,3 @@
-Cinnamin.Collection.Messages = Backbone.Collection.extend({
-  model: Message
+Cinnamin.Collections.Messages = Backbone.Collection.extend({
+  model: Cinnamin.Models.Message
 });

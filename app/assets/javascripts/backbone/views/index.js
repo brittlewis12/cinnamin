@@ -1,15 +1,17 @@
 Cinnamin.Views.Index = Backbone.View.extend({
   el: "div.app",
 
-  template: _.template($("script#index").html())
+  template: _.template($("script#index").html()),
 
   initialize: function() {
-    console.log("Index View initialized!");
+    __clog("Index View initialized!");
     this.render();
+    var newUser = new Cinnamin.Views.NewUser();
+    this.$el.append(newUser.el);
   },
 
   render: function() {
-    console.log("Index View rendered!")
+    __clog("Index View rendered!")
     this.$el.html(this.template());
   }
 });

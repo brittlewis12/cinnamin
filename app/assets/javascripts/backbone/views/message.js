@@ -6,12 +6,12 @@ Cinnamin.Views.Message = Backbone.View.extend({
   template: _.template($("script#message").html()),
 
   initialize: function() {
-    console.log("Message View initialized!");
+    __clog("Message View initialized!");
     this.render();
   },
 
   render: function() {
-    console.log("Message View rendered!");
+    __clog("Message View rendered!");
     var compiled = this.template(this.model.toJSON());
     this.$el.html(compiled);
   }

@@ -1,3 +1,3 @@
-Cinnamin.Collection.Groups = Backbone.Collection.extend({
-  model: Group
+Cinnamin.Collections.Groups = Backbone.Collection.extend({
+  model: Cinnamin.Models.Group
 });

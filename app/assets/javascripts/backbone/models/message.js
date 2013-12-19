@@ -1,3 +1,3 @@
-Cinnamin.Model.Message = Backbone.Model.extend({
+Cinnamin.Models.Message = Backbone.Model.extend({
   url: '/messages'
 });

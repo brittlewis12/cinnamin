@@ -6,11 +6,41 @@
   <h1>Welcome to Cinnam.in!</h1>
 </script>
 
+<script type="text/html" id="new-user">
+  <h2 class="new-user">Sign up!</h2>
+  <form class="new-user">
+    <label for="email"> email
+      <input type="email" name="email">
+    </label>
+    <label for="username"> username
+      <input type="text" name="username">
+    </label>
+    <label for="password"> password
+      <input type="password" name="password">
+    </label>
+    <label for="password-confirmation"> confirm password
+      <input type="password" name="password-confirmation">
+    </label>
+    <input type="submit" value="Submit">
+  </form>
+</script>
+
+<script type="text/html" id="new-user-error">
+  <p>
+    There was a problem making your account: <br/>
+    <%%= error %>
+  </p>
+</script>
+
 <script type="text/html" id="group">
-  <%%= title && <h3>title</h3> %>
+  <%% if (title) { %>
+    <h3><%%= title %></h3>
+  <%% } %>
 </script>
 
 <script type="text/html" id="message">
   <!-- author_id !== user_id ? getAuthorById -->
-  <p><%%= content %></p>
+  <label> <%%= author_id %>
+    <p><%%= content %></p>
+  </label>
 </script>

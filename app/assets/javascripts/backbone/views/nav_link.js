@@ -8,18 +8,18 @@ Cinnamin.Views.NavLink = Backbone.View.extend({
   },
 
   initialize: function() {
-    console.log("NavLink View initialized!");
+    __clog("NavLink View initialized!");
     this.render();
   },
 
   render: function() {
-    console.log("NavLink View rendered!");
+    __clog("NavLink View rendered!");
     var compiled = this.template(this.model.toJSON());
     this.$el.html(compiled);
   },
 
   navigate: function() {
-    console.log("NavLink triggered navigate to '" + this.model.get('path') + "'!")
+    __clog("NavLink triggered navigate to '" + this.model.get('path') + "'!")
     Backbone.history.navigate(this.model.get('path'), {trigger: true});
   }
 });

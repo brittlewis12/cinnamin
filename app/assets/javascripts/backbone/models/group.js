@@ -1,3 +1,3 @@
-Cinnamin.Model.Group = Backbone.Model.extend({
+Cinnamin.Models.Group = Backbone.Model.extend({
   url: '/groups'
 });

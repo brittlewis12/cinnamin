@@ -1,3 +1,3 @@
-Cinnamin.Collections.NavLinks = Backbone.Collections.extend({
-  model: NavLink
+Cinnamin.Collections.NavLinks = Backbone.Collection.extend({
+  model: Cinnamin.Models.NavLink
 });

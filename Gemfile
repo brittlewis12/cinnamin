@@ -49,6 +49,7 @@ group :development, :test do
   gem 'ffaker'
   gem 'selenium-webdriver'
   gem 'launchy'
+  gem 'simplecov', require: false
 end
 
 # Use ActiveModel has_secure_password

@@ -6,12 +6,12 @@ Cinnamin.Views.Group = Backbone.View.extend({
   template: _.template($("script#group").html()),
 
   initialize: function() {
-    console.log("Group View initialized!")
+    __clog("Group View initialized!");
     this.render();
   },
 
   render: function() {
-    console.log("Group View rendered!")
+    __clog("Group View rendered!")
     var compiled = this.template(this.model.toJSON());
     this.$el.html(compiled);
   }

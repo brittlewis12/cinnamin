@@ -1,4 +1,4 @@
-Cinnamin.Model.NavLink = Backbone.Model.extend({});
+Cinnamin.Models.NavLink = Backbone.Model.extend({});
 
 // attrs = {
 //  linkTo: "home",
