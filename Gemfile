@@ -66,3 +66,6 @@ gem 'thin'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use 12factor for Heroku
+gem 'rails_12factor', group: :production
