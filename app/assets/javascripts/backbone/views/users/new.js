@@ -19,21 +19,16 @@ Cinnamin.Views.NewUser = Backbone.View.extend({
     __clog("NewUser Form submitted!");
     e.preventDefault();
 
-    var find = function(arg) {
-      var input = "input[name='" + arg + "']";
+    var find = function(inputName) {
+      var input = "input[name='" + inputName + "']";
       return this.$el.find(input).val();
     }.bind(this);
 
-    var email = find("email");
-    var username = find("username");
-    var password = find("password");
-    var passwordConf = find("password-confirmation");
-
     var user = new Cinnamin.Models.User({
-      email: email,
-      username: username,
-      password: password,
-      password_confirmation: passwordConf
+      email: find("email"),
+      username: find("username"),
+      password: find("password"),
+      password_confirmation: find("password-confirmation")
     });
 
     user.save(null, {

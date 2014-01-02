@@ -25,6 +25,7 @@ Cinnamin.Views.CreateUserError = Backbone.View.extend({
   },
 
   selfDestruct: function() {
+    __clog("CreateUserError View is self-destructing.")
     this.undelegateEvents();
     this.$el.removeData().unbind();
     this.remove();
