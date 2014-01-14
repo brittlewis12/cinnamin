@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require underscore
+//= require hide_nav
 //= require backbone
 //= require_tree ./backbone/app
 //= require_tree ./backbone/models
@@ -21,4 +22,7 @@
 //= require_tree ./backbone/views
 //= require_tree ./backbone/routers
 
-$(Cinnamin.init());
+
+if (window.hide !== true) {
+  Cinnamin.init();
+}

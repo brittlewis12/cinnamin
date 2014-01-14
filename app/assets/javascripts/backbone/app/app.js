@@ -10,7 +10,7 @@ Cinnamin = {
   debug: true
 }
 
-__clog = function(string) {
+function __clog(string) {
   if (Cinnamin.debug) {
     console.log("〃⋰⋱⋰  " + string);
   }

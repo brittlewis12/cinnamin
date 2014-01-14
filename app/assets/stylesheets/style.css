@@ -1,5 +1,24 @@
+* {
+  color: #FFF;
+  background-color: #A58C7A;
+}
+
+.hero {
+  font-family: 'Damion', sans-serif;
+  font-size: 5em;
+  margin-top: 15%;
+  text-align: center;
+  color: #462607;
+  margin-bottom: 0;
+}
+
+.soon {
+  margin-top: 0;
+  text-align: center;
+}
+
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Lucida Sans, sans-serif;
 }
 
 nav li {
