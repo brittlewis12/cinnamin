@@ -34,3 +34,7 @@ cinnamin
 * generate a token when a user signs in and embed it into the session
 * publish the chat token to redis & what groups they are authenticated for (group_id)
 * render the token into the js
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/brittlewis12/cinnamin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
